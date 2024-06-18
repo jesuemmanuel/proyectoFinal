@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.action {
+    display: flex;
+}
+
+#modif {
+    cursor: pointer;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5372d8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4158a5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 50%;
+    margin: auto;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+li div a {
+    margin: 0 5px;
+}
+
+.ended {
+    background-color: #c5c5c5;
+}
+
+/*CajaPopUp*/
+
+.contenedor_popup {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    transition: all 0.2s;
+    background-color: white;
+}
+
+.caja_popup2 {
+    display: block;
+    position: absolute;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+/*-----Modal----*/
+
+.container-modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: hsla(0, 0%, 29%, 0.808);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.content-modal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #2b2b2b;
+}
+
+.content-modal h2 {
+    margin-bottom: 15px;
+}
+
+.cerrar-modal {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.productos_modal {
+	float: none;
+}
+
+.hidden {
+    display: none!important;
+}
+
+.contenedor_productos {
+	float: left;
+	background: #c5c5c5;
+	position: relative;
+	margin: 1%;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	text-align: center;
+	padding: 20px 40px;
+	margin-bottom: 4%;
+}
